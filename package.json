@@ -1,0 +1,36 @@
+{
+  "name": "ts-augumented-array",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha src/**/*.spec.ts",
+    "test:watch": "mocha --watch --recursive src/**/*.spec.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.22",
+    "@types/extend": "^3.0.1",
+    "@types/mathjs": "^9.4.2",
+    "@types/mocha": "^9.0.0",
+    "@types/numeral": "^2.0.2",
+    "@types/object-path": "^0.11.1",
+    "chai": "^4.3.4",
+    "chai-date-string": "^0.1.0",
+    "chai-interface": "^2.0.3",
+    "codelyzer": "^6.0.2",
+    "cross-env": "^7.0.3",
+    "mocha": "^9.1.2",
+    "nyc": "^15.1.0",
+    "ts-node-register": "^1.0.0",
+    "tsc-watch": "^4.5.0",
+    "tsconfig-paths": "^3.11.0",
+    "tslint": "^6.1.3"
+  }
+}

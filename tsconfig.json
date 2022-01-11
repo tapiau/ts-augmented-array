@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "sourceMap": true,
+    "types": [
+      "mocha",
+      "node"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "baseUrl": "./src/",
+    "paths": {
+      "@src/*": ["src/*"]
+    },
+    "outDir": "./dist",
+    "declaration": false,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",               /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
+  },
+  "exclude": [
+    "**/*config.ts",
+    "node_modules/",
+    ".nyc_output/",
+    "dist/"
+  ]
+}

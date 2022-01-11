@@ -9,7 +9,17 @@
     "test": "mocha src/**/*.spec.ts",
     "test:watch": "mocha --watch --recursive src/**/*.spec.ts"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tapiau/ts-augumented-array.git"
+  },
+  "keywords": [
+    "typescript",
+    "array",
+    "intersect",
+    "substract",
+    "diff"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {

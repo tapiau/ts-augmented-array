@@ -1,8 +1,9 @@
 {
   "name": "ts-augumented-array",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "",
   "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "mocha src/**/*.spec.ts",

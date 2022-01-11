@@ -2,7 +2,7 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es6",
-    "sourceMap": true,
+//    "sourceMap": true,
     "types": [
       "mocha",
       "node"
@@ -16,7 +16,7 @@
       "@src/*": ["src/*"]
     },
     "outDir": "./dist",
-    "declaration": false,
+    "declaration": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "moduleResolution": "node",               /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */

@@ -11,12 +11,12 @@ Array.prototype.intersect = function(array) {
 
 Array.prototype.subtract = function(array) {
     return this.filter(x => !array.includes(x));
-}
+};
 
 Array.prototype.diff = function(array) {
     return this.subtract(array)
         .concat(array.subtract(this))
     ;
-}
+};
 
 export {};

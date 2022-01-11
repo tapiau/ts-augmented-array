@@ -1,6 +1,6 @@
 {
   "name": "ts-augumented-array",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -20,8 +20,13 @@
     "substract",
     "diff"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "Zbigniew 'zibi' Jarosik",
+  "maintainers": [{
+    "name": "Zbigniew 'zibi' Jarosik",
+    "email": "zibi@nora.pl",
+    "url": "http://github.com/tapiau"
+  }],
+  "license": "MIT",
   "dependencies": {
     "typescript": "^4.4.3"
   },

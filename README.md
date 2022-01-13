@@ -1,4 +1,4 @@
-# TS Augumented Array 
+# TS Augmented Array 
 
 Extends Array methods adding:
 - intersect(array): Array<T>;

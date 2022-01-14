@@ -2,12 +2,18 @@ import 'mocha';
 import {expect} from 'chai';
 import './index';
 
-const a = [1,2,3,4];
-const b = [3,4,5,6];
-const intersect = [3,4];
-const subtractA = [5,6];
-const subtractB = [1,2];
-const diff = [1,2,5,6];
+const a = [1, 2, 3, 4];
+const b = [3, 4, 5, 6];
+const intersect = [3, 4];
+const subtractA = [5, 6];
+const subtractB = [1, 2];
+const diff = [1, 2, 5, 6];
+const arrayOfObjects = [
+    {a: 1, b: 3},
+    {a: 2, b: 4},
+    {a: 3, b: 5},
+    {a: 4, b: 6},
+];
 
 describe('Array extension functions', () => {
     before(() => {
@@ -23,5 +29,9 @@ describe('Array extension functions', () => {
     });
     it('diff', () => {
         expect(a.diff(b)).to.deep.equal(diff);
+    });
+    it('pluck', () => {
+        expect(arrayOfObjects.pluck('a')).to.deep.equal(a);
+        expect(arrayOfObjects.pluck('b')).to.deep.equal(b);
     });
 });

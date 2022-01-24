@@ -5,3 +5,5 @@ Extends Array methods adding:
 - intersect(array): Array
 - pluck(field): Array
 - subtract(array): Array
+- indexByKey(arrayOfObjects): objectOfObjects
+

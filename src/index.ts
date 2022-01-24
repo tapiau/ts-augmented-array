@@ -4,6 +4,7 @@ declare global {
         intersect(array): Array<T>;
         pluck(field): Array<T>;
         subtract(array): Array<T>;
+        indexByKey(field): object;
     }
 }
 
@@ -23,6 +24,10 @@ Array.prototype.pluck = function(field) {
 
 Array.prototype.subtract = function(array) {
     return this.filter(x => !array.includes(x));
+};
+
+Array.prototype.indexByKey = function(field) {
+    return this.reduce((prev, curr) => ({ ...prev, [curr[field]]: curr }), {});
 };
 
 export {};

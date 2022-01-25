@@ -6,4 +6,12 @@ Extends Array methods adding:
 - pluck(field): Array
 - subtract(array): Array
 - indexByKey(arrayOfObjects): objectOfObjects
+- range(elements): Array
+- range(begin, end): Array
+
+### Usage:
+
+```
+import * as Array from './index';
+```
 

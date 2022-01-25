@@ -1,10 +1,11 @@
 declare global {
     interface Array<T> {
         diff(array): Array<T>;
+        indexByKey(field): object;
         intersect(array): Array<T>;
         pluck(field): Array<T>;
         subtract(array): Array<T>;
-        indexByKey(field): object;
+        range(begin, end): Array<T>;
     }
 }
 
@@ -29,5 +30,22 @@ Array.prototype.subtract = function(array) {
 Array.prototype.indexByKey = function(field) {
     return this.reduce((prev, curr) => ({ ...prev, [curr[field]]: curr }), {});
 };
+
+export function range(begin: number, end = 0): number[]
+{
+    return (
+        Array.from(
+            Array(
+                (end >= begin)
+                ? end - begin + 1
+                : begin
+            )
+            .keys()
+        )
+        .map(x => x + ( (end >= begin) ? begin : 0) )
+    );
+
+    // return Array.from(Array((end - begin + 1)).keys()).map(x => x + begin);
+}
 
 export {};

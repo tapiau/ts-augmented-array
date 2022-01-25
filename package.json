@@ -16,9 +16,11 @@
   "keywords": [
     "typescript",
     "array",
+    "diff",
+    "indexByKey",
     "intersect",
-    "substract",
-    "diff"
+    "range",
+    "substract"
   ],
   "author": "Zbigniew 'zibi' Jarosik",
   "maintainers": [

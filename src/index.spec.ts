@@ -8,6 +8,8 @@ const intersect = [3, 4];
 const subtractA = [5, 6];
 const subtractB = [1, 2];
 const diff = [1, 2, 5, 6];
+const keyList = ['a', 'b'];
+const combined = { a: 1, b: 2};
 const arrayOfObjects = [
     {a: 1, b: 3},
     {a: 2, b: 4},
@@ -33,5 +35,8 @@ describe('Array extension functions', () => {
     it('pluck', () => {
         expect(arrayOfObjects.pluck('a')).to.deep.equal(a);
         expect(arrayOfObjects.pluck('b')).to.deep.equal(b);
+    });
+    it('combine', () => {
+        expect(keyList.combine(subtractB)).to.deep.equal(combined);
     });
 });

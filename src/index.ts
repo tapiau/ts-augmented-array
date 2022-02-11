@@ -1,11 +1,16 @@
 declare global {
     interface Array<T> {
+        combine(array): Array<T>;
         diff(array): Array<T>;
         intersect(array): Array<T>;
         pluck(field): Array<T>;
         subtract(array): Array<T>;
     }
 }
+
+Array.prototype.combine = function(array) {
+    return this.reduce((result, field, index) => (result[field] = array[index], result), {});
+};
 
 Array.prototype.diff = function(array) {
     return this.subtract(array)

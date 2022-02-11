@@ -5,3 +5,6 @@ Extends Array methods adding:
 - intersect(array): Array
 - pluck(field): Array
 - subtract(array): Array
+- combine(array): Object
+
+No additional dependencies!

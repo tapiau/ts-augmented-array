@@ -45,7 +45,7 @@ describe('Array extension functions', () => {
         expect(Array.range(3, 6)).to.deep.equal(b);
     });
     it('combine', () => {
-        expect(keyList.combine(subtractB)).to.deep.equal(combined);
+        expect(keyList.combine(valueList)).to.deep.equal(combined);
     });
 });
 

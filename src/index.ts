@@ -6,7 +6,12 @@ declare global {
         intersect(array): Array<T>;
         pluck(field): Array<T>;
         subtract(array): Array<T>;
-        range(begin, end): Array<T>;
+    }
+}
+
+declare global {
+    interface ArrayConstructor {
+        range(begin, end?): number[];
     }
 }
 
@@ -38,21 +43,15 @@ Array.prototype.indexByKey = function(field: string): object {
     return this.reduce((prev, curr) => ({ ...prev, [curr[field]]: curr }), {});
 };
 
-export function range(begin: number, end = 0): number[]
-{
-    return (
-        Array.from(
-            Array(
-                (end >= begin)
-                ? end - begin + 1
-                : begin
-            )
-            .keys()
+Array.range = (begin: number, end = 0): number[] => Array.from(
+        Array(
+            (end >= begin)
+            ? end - begin + 1
+            : begin
         )
-        .map(x => x + ( (end >= begin) ? begin : 0) )
-    );
-
-    // return Array.from(Array((end - begin + 1)).keys()).map(x => x + begin);
-}
+        .keys()
+    )
+    .map(x => x + ( (end >= begin) ? begin : 0) )
+;
 
 export {};

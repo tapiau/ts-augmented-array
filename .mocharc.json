@@ -2,8 +2,7 @@
   "extension": ["ts"],
   "spec": "src/**/*.spec.ts",
   "require": [
-    "ts-node/register",
-    "tsconfig-paths/register"
+    "ts-node/register"
   ],
   "watch-files": ["./src/**/*.ts"]
 }
